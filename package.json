@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "license": "MIT",
   "dependencies": {
     "react": "16.11.0",
     "react-dom": "16.11.0"
@@ -13,8 +14,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "build": ["react-scripts build", "babel src -d lib"],
+    "test": ["react-scripts test --env=jsdom","jest"],
     "eject": "react-scripts eject"
   },
   "browserslist": [
